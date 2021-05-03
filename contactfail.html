@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!--CDN qui va me permettre d'utiliser bootstrap et aussi jquery  -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+
+		<!--insertion du css ansi que utf-8 pour les carctère-->
+		<link rel="stylesheet" type="text/css" href="bare_de_navigation.css" />
+		<meta charset="utf-8">
+	</head>
+
+	<body>
+			<!--
+			<div class="presentation-container">
+				<p>Société  Travaux Industriel sur Corde</p>
+			</div>
+			-->
+			<div class="image2"><p><img src="poulet.jpg"></p></div>
+			<div class="navbar-container">
+				<ul class="navbar">
+	          		<li><a href="projetSTIC.html">Accueil</a></li>
+	         		<li><a href="service.html">Services</a></li>
+	          		<li><a href="galerie.html">Galerie</a></li>
+	         		<li><a href="contact.html">Contact</a></li> 
+        		</ul>
+
+			</div>
+			<div class="espace"></div>
+			<div class="espace"></div>
+			<div class="espace"></div>
+			<div class="espace"></div> 
+			<div class="formulaire">
+				<form action="traitement.php" method="post">
+					<div>
+        				<label for="nom">Nom :</label>
+        				<input type="text"  name="nom">
+    				</div>
+    				<div>
+        				<label for="mail">e-mail :</label>
+        				<input type="email"  name="mail" placeholder="exemple@hotmail.fr">
+    				</div>
+    				<div>
+        				<label for="msg">Message :</label>
+        			<textarea id="msg" name="user_message" placeholder="ceci est mon message "></textarea>
+    				</div>
+    				<div class="button">
+        			<button type="submit" >Envoyer le message</button>
+    				</div>
+				</form>
+			</div>
+			
+	</body>
+</html>

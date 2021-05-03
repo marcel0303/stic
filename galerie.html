@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!--CDN qui va me permettre d'utiliser bootstrap et aussi jquery  -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+
+		<!--insertion du css ansi que utf-8 pour les carctère-->
+		<link rel="stylesheet" type="text/css" href="bare_de_navigation.css" />
+		<meta charset="utf-8">
+	</head>
+	
+	<body>
+		<!--le responsive la div row represente une ligne et a l'interireur de cette ligne il y a des colones et cette garce a ces colones et ces lignes que l'on pourra superposer les éléments -->
+			<div class="titre_container">
+				<!--<h1>S.T.I.C</h1>-->
+			</div>
+			<!--
+			<div class="presentation-container">
+				<p>Société  Travaux Industriel sur Corde</p>
+			</div>
+			-->
+			<!--la div class="navbar-container" est celle qui va permettre de faire la bare de navigation-->
+			<!--si l'on veut rajouter un element dans la barre d enavigation il suffit de rajouter un lien "href" a cette liste -->
+			<!-- s'il on souhaite modifier un des element de la garre de navigation il suffit de modifier le mots entre les balise "a href"-->
+			<div class="image2"><p><img src="poulet.jpg"></p></div>
+			<div class="navbar-container">
+				<ul class="navbar">
+	          		<li><a href="index.html">Accueil</a></li>
+	         		<li><a href="servicee.html">Services</a></li>
+	          		<li><a href="galerie.html">Galerie</a></li>
+	         		<li><a href="contact.html">Contact</a></li> 
+        		</ul>
+
+			</div>
+			<div class="espace"></div>
+			<div class="sasa">
+				<p>voici un exemple des projets realiser avec cette mini galeie ici il y a de tres gros chantier qui en ete menner par stic</p>
+			</div>
+			<div class="row">
+    <div class="col">
+       <img src="travaux.jpg" onclick="openLightbox();toSlide(1)" class="hover-shadow preview" alt="Toy car on the road." />
+    </div>
+    <div class="col">
+       <img src="travaux.jpg" onclick="openLightbox();toSlide(2)" class="hover-shadow preview" alt="Toy car exploring offroad." />
+    </div>
+    <div class="col">
+       <img src="travaux.jpg" onclick="openLightbox();toSlide(3)" class="hover-shadow preview" alt="Toy car in the city" />
+    </div>
+  </div>
+  
+  <div id="Lightbox" class="modal">
+  
+    <span class="close pointer" onclick="closeLightbox()">&times;</span>
+    <div class="modal-content">
+      <div class="slide">
+        <img src="travaux.jpg" class="image-slide" alt="Toy car on the road." />
+      </div>
+      <div class="slide">
+        <img src="guyane.jpg" class="image-slide" alt="Toy car exploring offroad." />
+      </div>    
+      <div class="slide">
+        <img src="travaux.jpg" class="image-slide" alt="Toy car in the city." />
+      </div>
+    
+      <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
+      <a class="next" onclick="changeSlide(1)">&#10095;</a>
+          
+      <div class="dots">
+        <div class="col">
+          <img src="travaux.jpg" onclick="toSlide(1)" alt="Toy car on the road." />
+        </div>
+        <div class="col">
+          <img src="travaux.jpg" onclick="toSlide(2)" alt="Toy car exploring offroad." />
+        </div>
+        <div class="col">
+          <img src="travaux.jpg" class="modal-preview hover-shadow" onclick="toSlide(3)" alt="Toy car in the city" />
+        </div>
+      </div>
+    </div> 
+  </div>
+  <script>
+    let slideIndex = 1;
+    showSlide(slideIndex);
+    
+    function openLightbox() {
+      document.getElementById('Lightbox').style.display = 'block';
+    };
+    
+    function closeLightbox() {
+      document.getElementById('Lightbox').style.display = 'none';
+    };
+    
+    function changeSlide(n) {
+      showSlide(slideIndex += n);
+    };
+    
+    function toSlide(n) {
+      showSlide(slideIndex = n);
+    };
+    
+    function showSlide(n) {
+      const slides = document.getElementsByClassName('slide');
+      let modalPreviews = document.getElementsByClassName('modal-preview');
+    
+      if (n > slides.length) {
+        slideIndex = 1; 
+      };
+      
+      if (n < 1) {
+        slideIndex = slides.length;
+      };
+    
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      };
+      
+      for (let i = 0; i < modalPreviews.length; i++) {
+        modalPreviews[i].className = modalPreviews[i].className.replace(' active', '');
+      };
+      
+      slides[slideIndex - 1].style.display = 'block';
+      modalPreviews[slideIndex - 1].className += ' active';
+    };
+  </script>
+	</body>
+</html>

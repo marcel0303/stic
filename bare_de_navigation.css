@@ -1,0 +1,566 @@
+/*hover va permetre que lorsque le pointer passe sur 
+un l'element seulement a ce moment le code va rentrer en action  */
+
+  .navbar {
+  padding: 8px;
+  display: flex;
+  width: 98%;
+  background:linear-gradient(#2E64FE,#87CEEB) ;/*cette commande va permettre de faire un degrader
+   de couleur sur la barre' de navigation  */
+
+}
+
+
+
+.navbar li {
+  list-style: none;
+}
+.navbar li a{
+  padding: 10px;
+  color: white;
+  display: block;
+  text-decoration: none;
+  font-size: 30px;
+
+  
+   
+ 
+
+}
+@media(max-width: 400px){
+  .navbar-container ul li a {
+    font-size: 10px;
+  }
+}
+.navbar{
+  border-radius: 15px;
+}
+
+
+
+.navbar li a:hover,
+li a:focus{
+  background-color: white;
+  color:  #87cefa;
+  cursor: pointer;
+
+
+}
+
+
+
+/*navbar va permettre de structurer la barre de 
+navigation et va permettre de lui  donner sont aspect */
+.navbar {
+  padding: 10px;
+  display: flex;
+  width: 100%;
+  background:linear-gradient(#2E64FE,#87CEEB) ;/*cette commande va permettre de faire un degrader
+   de couleur sur la barre' de navigation  */
+
+
+}
+
+
+.navbar li {
+  list-style: none;
+}
+.navbar li a{
+  padding: 20px;
+  color: white;
+  display: block;
+  text-decoration: none;
+  font-size: 30px;
+  
+   
+ 
+
+}
+.navbar{
+  border-radius: 15px;
+}
+
+.navbar li a:hover,
+li a:focus{
+  background-color: white;
+  color:  #87cefa;
+  cursor: pointer;
+
+
+}
+
+
+.titre_container h1{
+  text-align:center;
+  letter-spacing: 10px;
+  font-size: 100px;
+  text-transform : uppercase;
+
+
+
+}
+.reseau_container{
+    
+    
+    width:98%;
+    height: auto;
+
+
+}
+.espace{
+  height: 30px;
+}
+.projet-container{
+   padding: 20px;
+   font-size: 20px;
+   margin: 0 auto;
+   max-width: 800px;
+   background-color: #E0FAFE;
+       
+
+
+
+}
+/* ce block va permettre de fair une petiti transition et de zoomer legerement
+ et ainsi rendre l'interaction un peu plus dynamique*/
+.projet-container:hover{
+  transform: scale(1.04);
+  -moz-transition: all 0.5s ease-in-out 0s;
+
+    -webkit-transition: all 0.5s ease-in-out 0s;
+
+    -o-transition: all 0.5s ease-in-out 0s;
+
+    -ms-transition: all 0.5s ease-in-out 0s;
+
+    transition: all 0.5s ease-in-out 0s;
+
+}
+.presentation-container{
+  margin: 8px;
+  padding: 20px;margin: 8px;
+  font-size: 20px;
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  margin: 0 auto;
+  max-width: 700px;
+  font-size: 50px;
+
+}
+.horaire li{
+     margin: 0 auto;
+     max-width: 200px;
+     font-size: 17px;
+     list-style: none;
+
+}
+.horaire{
+  background-color: #E0FAFE;
+}
+.localisation{
+  margin: 0 auto;
+  max-width: 550px;
+}
+.localisation:hover{
+   transform: scale(1.04);
+  -moz-transition: all 0.5s ease-in-out 0s;
+
+    -webkit-transition: all 0.5s ease-in-out 0s;
+
+    -o-transition: all 0.5s ease-in-out 0s;
+
+    -ms-transition: all 0.5s ease-in-out 0s;
+
+    transition: all 0.5s ease-in-out 0s;
+}
+.image{
+  margin: 0 auto;
+     max-width: 11200px;
+  -moz-transition: all 0.5s ease-in-out 0s;
+
+    -webkit-transition: all 0.5s ease-in-out 0s;
+
+    -o-transition: all 0.5s ease-in-out 0s;
+
+    -ms-transition: all 0.5s ease-in-out 0s;
+
+    transition: all 0.5s ease-in-out 0s;
+
+    opacity: 0.7;
+}
+.image:hover{
+ 
+    transform: scale(1.09);
+
+    opacity: 2;
+}
+
+.projet-container :hover{
+  background:linear-gradient(white,#F0F8FF) ;
+}
+.intro{
+  padding: 20px;
+   font-size: 20px;
+   margin: 0 auto;
+   max-width: 800px;
+}
+.suites{
+  padding: 20px;
+   font-size: 20px;
+   margin: 0 auto;
+   max-width: 800px;
+}
+.lien{
+  margin: 0 auto;
+   max-width: 400px;
+   font-size: 20px;
+
+}
+.part4{
+
+   font-size: 20px;
+}
+.linear-gradient{
+
+}
+.formulaire{
+   /* Uniquement centrer le formulaire sur la page */
+  margin: 0 auto;
+  width: 400px;
+  /* Encadré pour voir les limites du formulaire */
+  padding: 6em;
+  border: 4px solid #CCC;
+  border-radius: 1em;
+}
+.formulaire label{
+  text-align: right;
+  font-size: 20px;
+}
+.formulaire input{
+  width: 90%;
+}
+.projet-container img{
+  border-radius: 120px;
+}
+/*partie dedier a la apge galeire
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+
+  box-sizing: border-box;
+    }
+    
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+    
+    body {
+      margin: 0;
+    }
+    
+    .preview {
+      width: 100%;
+    }
+    
+    .row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    
+    .row > .col {
+      padding: 0 8px;
+    }
+    
+    .col {
+      float: left;
+      width: 25%;
+    }
+    
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      padding: 10px 62px 0px 62px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: black;
+    }
+    
+    .modal-content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: auto;
+      padding: 0 0 0 0;
+      width: 80%;
+      max-width: 1200px;
+    }
+    
+    .slide {
+      display: none;
+    }
+    
+    .image-slide {
+      width: 100%;
+    }
+    
+    .modal-preview {
+      width: 100%;
+    }
+    
+    .dots {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    
+    img.preview, img.modal-preview {
+      opacity: 0.6;
+    }
+    
+    img.active,
+    .preview:hover,
+    .modal-preview:hover {
+      opacity: 1;
+    }
+    
+    img.hover-shadow {
+      transition: 0.3s;
+    }
+    
+    .hover-shadow:hover {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    } 
+    
+    .close {
+      color: white;
+      position: absolute;
+      top: 10px;
+      right: 25px;
+      font-size: 35px;
+      font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: #999;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+    .previous,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -50px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+    
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    .previous:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+
+    .image2 p img{
+      width:250px; height:200px;
+    }
+@media screen and (max-width: 300px){
+  .localisation iframe{
+    width: 260px; height: 200px;
+  }
+}
+@media screen  and (min-width: 200px) and (max-width: 300px){
+  .image2 p img{height: 200px;
+width: 250px;}
+}
+@media screen  and (min-width: 300px) and (max-width: 500px){
+  .image2 p img{height: 200px;
+width: 500px;}
+}
+@media screen  and (min-width: 500px) and (max-width: 650px){
+  .image2 p img{height: 300px;
+width: 650px;}
+}
+@media screen  and (min-width: 650px) and (max-width: 750px){
+  .image2 p img{height: 300px;
+width: 750px;}
+}
+@media screen  and (min-width: 750px) and (max-width: 850px){
+  .image2 p img{height: 300px;
+width: 850px;}
+}
+@media screen  and (min-width: 850px) and (max-width: 950px){
+  .image2 p img{height: 300px;
+width: 950px;}
+}
+@media screen  and (min-width: 950px) and (max-width: 1050px){
+  .image2 p img{height: 300px;
+width: 1050px;}
+}
+@media screen  and (min-width: 1050px) and (max-width: 1150px){
+  .image2 p img{height: 300px;
+width: 1150px;}}
+@media screen  and (min-width: 1150px) and (max-width: 1250px){
+  .image2 p img{height: 300px;
+width: 1250px;}
+
+}
+@media screen  and (min-width: 1250px) and (max-width: 1350px){
+  .image2 p img{height: 350px;
+width: 1350px;}
+}
+@media screen  and (min-width: 1350px) and (max-width: 1450px){
+  .image2 p img{height: 350px;
+width: 1450px;}
+}
+@media screen  and (min-width: 1450px) and (max-width: 1550px){
+  .image2 p img{height: 350px;
+width: 1550px;}
+}
+@media screen  and (min-width: 1550px) and (max-width: 1650px){
+  .image2 p img{height: 350px;
+width: 1650px;}
+}
+@media screen  and (min-width: 1650px){
+  .image2 p img{height: 500px;
+width: 2000px;}
+}
+.image2 p {
+display: inline;
+}
+/*
+parti dedeier au formulaire de contat
+
+
+
+
+*/
+form {
+ background-color:#FAFAFA;
+ padding:10px;
+ width:600px;
+ margin:  auto;
+ }
+ @media screen  and (min-width: 300px)and (max-width: 350px){
+  form{width: 330px}
+}
+ @media screen  and (min-width: 300px)and (max-width: 350px){
+   form input, textarea, select {
+ width:250px;
+ }
+}
+ @media screen  and (min-width: 350px)and (max-width: 400px){
+  form{width: 370px}
+}
+ @media screen  and (min-width: 350px)and (max-width: 400px){
+   form input, textarea, select {
+ width:300px;
+ }
+}
+ @media screen  and (min-width: 400px)and (max-width: 450px){
+  form{width: 430px}
+}
+ @media screen  and (min-width: 400px)and (max-width: 450px){
+   form input, textarea, select {
+ width:350px;
+ }
+}
+ @media screen  and (min-width: 450px)and (max-width: 500px){
+  form{width: 470px}
+}
+ @media screen  and (min-width: 450px)and (max-width: 500px){
+   form input, textarea, select {
+ width:400px;
+ }
+}
+ @media screen  and (min-width: 500px)and (max-width: 550px){
+  form{width: 530px}
+}
+ @media screen  and (min-width: 500px)and (max-width: 550px){
+   form input, textarea, select {
+ width:450px;
+ }
+}
+ @media screen  and (min-width: 550px)and (max-width: 600px){
+  form{width: 570px}
+}
+ @media screen  and (min-width: 550px)and (max-width: 600px){
+   form input, textarea, select {
+ width:500px;
+ }
+}
+fieldset {
+ padding:0 20px 20px 20px;
+ margin-bottom:10px;
+ border:4px solid #87CEEB;
+ }
+legend {
+ color:#2E64FE;
+ font-weight:bold
+ }
+label {
+ margin-top:10px;
+ display:block;
+ }
+label.inline {
+ display:inline;
+ margin-right:50px;
+ }
+input, textarea, select, option {
+ background-color:white;
+ }
+input, textarea, select {
+ padding:3px;
+ border:1px solid #F5C5C5;
+ width:500px;
+ box-shadow:1px 1px 2px white inset;
+ }
+select {
+ margin-top:10px;
+ }
+input[type=radio] {
+ background-color:transparent;
+ border:none;
+ width:10px;
+ }
+input[type=submit], input[type=reset] {
+ width:100px;
+ margin-left:5px;
+ box-shadow:1px 1px 1px #87CEEB;
+ cursor:pointer;
+ }
