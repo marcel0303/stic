@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!--CDN qui va me permettre d'utiliser bootstrap et aussi jquery  -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+
+		<!--insertion du css ansi que utf-8 pour les carctère-->
+		<link rel="stylesheet" type="text/css" href="bare_de_navigation.css" />
+		<meta charset="utf-8">
+	</head>
+	
+	<body>
+			<div class="titre_container">
+				<!--<h1>S.T.I.C</h1>-->
+			</div>
+			<!--
+			<div class="presentation-container">
+				<p>Société  Travaux Industriel sur Corde</p>
+			</div>
+			-->
+			<!--ic sera la photo de font qui sera du css directement sur la page html et qui va etre avant la barre de navigation-->
+			
+			<!--la div class="navbar-container" est celle qui va permettre de faire la bare de navigation-->
+			<!--si l'on veut rajouter un element dans la barre d enavigation il suffit de rajouter un lien "href" a cette liste -->
+			<!-- s'il on souhaite modifier un des element de la garre de navigation il suffit de modifier le mots entre les balise "a href"-->
+			<div class="image2"><p><img src="poulet.jpg"  ></p></div>
+			<div class="navbar-container">
+				<ul class="navbar">
+	          		<li><a href="index.html">Accueil</a></li>
+	         		<li><a href="servicee.html">Services</a></li>
+	          		<li><a href="galerie.html">Galerie</a></li>
+	         		<li><a href="contact.html">Contact</a></li> 
+	         		<li><a href="login.php">login</a>
+        		</ul>
+
+			</div>
+			<!--ici nous avons une mini barre de navigation qui va permettre de ce deplacer sur notre site et de ce reperer-->
+			<!-- c'est lien vont etre local-->
+			<div class="lien">
+		
+	          		<a href="#projet-container">projets< </a>
+	         		<a href="#horaire">horaire< </a>
+	          		<a href="#localisation">lacalisation< </a>
+	         		<a href="contact.html">Contact </a>
+        		
+			</div>
+			<div class="espace"></div><div class="espace"></div>
+				<div class="projet-container">
+					<div id="projet-container">
+						<div class="row">
+							<div class="col-sm-6">
+								<img src="qui.png" alt="image de bienvenue" height="250px" width="250px">
+			    			</div>
+			    			<div class="col-sm-6">
+								<p>
+									<h1>S.T.I.C ?</h1>
+				    			S.T.I.C : Société a Travaux Industriel sur Corde est  situer en Guyane  francais au niveau de dégrad de cannes ces une société qui compte X salarie, elle a pour but un objectif lucrative. </p>
+			    			</div>
+		    			</div>
+		    		</div>
+				</div>
+				<div class="espace"></div>
+				<div class="espace"></div>
+				<div class="espace"></div>
+				<div class="projet-container">
+					<div class="row">
+						<div class="col-sm-6"><img src="chantier.jpg" alt="image de bienvenue" height="250px" width="250px"><!--insertion d'une image et aussi gestion de la grandeur-->
+							<h1> Notre secteur d'activité ?</h1>
+							<p>Le secteur d'activité de S.T.I.C est  l'industrie et la construction de batiment </p>
+						</div>
+						<div class="col-sm-6">
+							<img src="equipe.jpeg" alt="image de bienvenue" height="250px" width="250px"><!--insertion d'une image et aussi gestion de la grandeur-->
+							<h1>Notre équipe ? </h1>
+							<p> Nos équipe sont constituer de travailleur industrielle  qui on pour but la réalistaion des projet dans un temps imapartit et avec proffesionalisme</p>
+						</div>
+					</div>
+				</div>
+			<div class="espace"></div>
+			
+			<div class="espace"></div>
+			<div class="espace"></div>
+			<div class="horaire">
+				<div id="horaire">
+					
+					<ul>
+						<li><h1> horaires</h1></li>
+						<li>lundi de 7h30 a 15h00</li>
+						<li>mardi de 7h30 a 15h00</li>
+						<li>mercredi de 7h30 a 15h00</li>
+						<li>jeudi de 7h30 a 15h00</li>
+						<li>vendredi de 7h30 a 12h0</li>
+					</ul>
+				</div>
+			</div>
+			
+	</body>
+</html>
